@@ -46,7 +46,7 @@ function grathDraw() {
 
     // parameters kits grathic
     grathBlock.append(parametersGrathBlock);
-    parametersGrathBlock.append(`Графики весовых коэффициентов`);
+    parametersGrathBlock.append(`Граффики весовых коофициентов`);
 
     valuesNumber = Math.round((parameterKitSumm / grathStep) * 100) / 100;
     values = new Array(valuesNumber).fill().map(function (item, i) {
@@ -90,7 +90,6 @@ function grathDraw() {
           ],
         },
         options: {
-          backgroundColor: "rgb(209, 250, 255)",
           scales: {
             y: {
               beginAtZero: true,
@@ -138,7 +137,6 @@ function grathDraw() {
         ],
       },
       options: {
-        backgroundColor: "rgb(209, 250, 255)",
         barThickness: 40,
         scales: {
           y: {
@@ -156,7 +154,7 @@ function grathDraw() {
     // grades grathic
     if (isGradeExist() && gradeNumbers > 1 && gradeNumbers < 64) {
       grathBlock.append(gradesGrathBlock);
-      gradesGrathBlock.append(`Графики изменения рейтинговых оценок`);
+      gradesGrathBlock.append(`Граффики изменения рейтинговых оценок`);
 
       valuesNumber = Math.round((parameterKitSumm / grathStep) * 100) / 100;
       values = new Array(valuesNumber).fill().map(function (item, i) {
@@ -207,7 +205,6 @@ function grathDraw() {
             ],
           },
           options: {
-            backgroundColor: "rgb(209, 250, 255)",
             scales: {
               y: {
                 beginAtZero: true,
@@ -261,7 +258,6 @@ function grathDraw() {
           ],
         },
         options: {
-          backgroundColor: "rgb(209, 250, 255)",
           scales: {
             y: {
               min: 0,
